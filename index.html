@@ -275,7 +275,7 @@
             </div>
           </div>
           
-          <button class="seta seta-direita" onclick="rolarMiniaturas(1)">&#10095;</button>
+          <button class="navbar-toggler" type="button" onclick="abrirSidebar()"><span class="navbar-toggler-icon"></span></button>
         </div>
       </div>
 
@@ -470,6 +470,16 @@ document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
     }
 });
 </script>
+<script>
+  function abrirSidebar() {
+    document.getElementById("sidebar").style.width = "250px";
+  }
+
+  function fecharSidebar() {
+    document.getElementById("sidebar").style.width = "0";
+  }
+</script>
+
 
 </body>
 </html>
