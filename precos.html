@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EM Piscina - Nossos Preços</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+    <div class="container-fluid d-flex justify-content-between align-items-center position-relative">
+      <button class="btn btn-outline-light me-2" onclick="toggleSidebar()">&#9776;</button>
+      
+      <a class="navbar-brand mx-auto position-absolute top-50 start-50 translate-middle" href="index.html">
+        <img src="Imagens/Imagem 2.png" alt="EM Piscina" class="logo-navbar">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="precos.html">Preços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servico.html">Serviço</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <h1 class="text-center mb-5">Nossos Planos e Valores</h1>
+
+    <div class="precos-container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="precos-card p-4 text-center h-100">
+            <h3>Piscina tamanho padrão</h3>
+            <p class="display-5 text-primary">R$ 150<span class="text-muted">/mês</span></p>
+            <ul class="list-unstyled text-start">
+              <li>✔ Limpeza semanal</li>
+              <li>✔ Ajuste de pH</li>
+              <li>✔ Tenha Produtos inclusos</li>
+            </ul>
+            <a href="https://wa.me/5544998521670" class="btn btn-outline-primary">Contratar</a>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="precos-card precos-destaque p-4 text-center h-100">
+            <h3>Piscina Média</h3>
+            <p class="display-5 text-primary">R$ 250<span class="text-muted">/mês</span></p>
+            <ul class="list-unstyled text-start">
+              <li>✔ Visitas 2x/semana</li>
+              <li>✔ Todos os produtos inclusos</li>
+              <li>✔ Relatório mensal</li>
+            </ul>
+            <a href="https://wa.me/5544998521670" class="btn btn-primary">Contratar</a>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="precos-card p-4 text-center h-100">
+            <h3>Piscina grande</h3>
+            <p class="display-5 text-primary">R$ 350<span class="text-muted">/único</span></p>
+            <ul class="list-unstyled text-start">
+              <li>✔ Limpeza profunda</li>
+              <li>✔ Hidrolavagem completa</li>
+              <li>✔ Aplicação de algicida</li>
+            </ul>
+            <a href="https://wa.me/5544998521670" class="btn btn-outline-primary">Contratar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-primary text-white text-center py-4 mt-5">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 EM Piscina. Todos os direitos reservados.</p>
+      <p class="mb-0">Desenvolvido por [Elton Magalhães]</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5544998521670" class="whatsapp-float" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.style.width = sidebar.style.width === '250px' ? '0' : '250px';
+    }
+  </script>
+</body>
+</html>
